@@ -1,0 +1,66 @@
+export default courseData = [
+    {
+      id: '3b9c05c0-6f9b-11ec-90d6-0242ac120003',
+      name: 'CMPE 101',
+      description: '101 - Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 101 - Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.101 - Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ',
+      instructor: 'Instructor 1',
+      coverImage: 'https://images.unsplash.com/photo-1561736778-92e52a7769ef?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80',
+    },
+    {
+      id: '4673f03e-6f9b-11ec-90d6-0242ac120003',
+      name: 'CMPE 102',
+      description: '102 - Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ',
+      instructor: 'Instructor 2',
+      coverImage: 'https://images.unsplash.com/photo-1501504905252-473c47e087f8?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1074&q=80',
+    },
+    {
+      id: '4c12a1f2-6f9b-11ec-90d6-0242ac120003',
+      name: 'CMPE 111',
+      description: '111 - Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ',
+      instructor: 'Instructor 3',
+      coverImage: 'https://images.unsplash.com/photo-1517048676732-d65bc937f952?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80',
+    },
+    {
+      id: '5090faee-6f9b-11ec-90d6-0242ac120003',
+      name: 'CMPE 103',
+      description: '103 - Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ',
+      instructor: 'Instructor 4',
+      coverImage: 'https://images.unsplash.com/photo-1532619187608-e5375cab36aa?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80',
+    },
+    {
+      id: '56d74d0e-6f9b-11ec-90d6-0242ac120003',
+      name: 'CMPE 123',
+      description: '123 - Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ',
+      instructor: 'Instructor 5',
+      coverImage: 'https://images.unsplash.com/photo-1532619187608-e5375cab36aa?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80',
+    },
+    {
+      id: '5cda00b6-6f9b-11ec-90d6-0242ac120003',
+      name: 'CMPE 133',
+      description: '133 - Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ',
+      instructor: 'Instructor 6',
+      coverImage: 'https://images.unsplash.com/photo-1532619187608-e5375cab36aa?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80',
+    },
+    {
+      id: '618e5a30-6f9b-11ec-90d6-0242ac120003',
+      name: 'CMPE 137',
+      description: '137 - Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ',
+      instructor: 'Instructor 7',
+      coverImage: 'https://images.unsplash.com/photo-1532619187608-e5375cab36aa?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80',
+    },
+    {
+      id: '66ede392-6f9b-11ec-90d6-0242ac120003',
+      name: 'CMPE 442',
+      description: '442 - Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ',
+      instructor: 'Instructor 8',
+      coverImage: 'https://images.unsplash.com/photo-1532619187608-e5375cab36aa?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80',
+    },
+    {
+      id: '6b8cce5e-6f9b-11ec-90d6-0242ac120003',
+      name: 'CMPE 447',
+      description: '447 - Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ',
+      instructor: 'Instructor 9',
+      coverImage: 'https://images.unsplash.com/photo-1532619187608-e5375cab36aa?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80',
+    },
+  ];
+

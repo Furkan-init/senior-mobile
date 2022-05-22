@@ -1,0 +1,60 @@
+export default [
+    {
+      bg: '#A8DDE9',
+      color: '#3F5B98',
+      category: 'Chapter 1',
+      subCategories: ['Lorem ipsum dolor sit amet','Lorem ipsum dolor sit amet','Lorem ipsum dolor sit amet','Lorem ipsum dolor sit amet',]
+    },
+    {
+      bg: '#086E4B',
+      color: '#33d9b2',
+      category: 'Chapter 2',
+      subCategories: [
+        'Lorem ipsum dolor sit amet',
+        'Lorem ipsum dolor sit amet',
+        'Lorem ipsum dolor sit amet',
+        'Lorem ipsum dolor sit amet',
+        'Lorem ipsum dolor sit amet',
+        'Lorem ipsum dolor sit amet',
+        'Lorem ipsum dolor sit amet',
+        'Lorem ipsum dolor sit amet',
+      ],
+    },
+    {
+      bg: '#FECBCA',
+      color: '#FD5963',
+      category: 'Chapter 3',
+      subCategories: ['Lorem ipsum dolor sit amet', 'Lorem ipsum dolor sit amet','Lorem ipsum dolor sit amet','Lorem ipsum dolor sit amet'],
+    },
+    {
+      bg: '#193B8C',
+      color: '#ff793f',
+      category: 'CMPE 4',
+      subCategories: [
+        'Lorem ipsum dolor sit amet',
+        'Lorem ipsum dolor sit amet',
+        'Lorem ipsum dolor sit amet',
+        'Lorem ipsum dolor sit amet',
+        'Lorem ipsum dolor sit amet',
+        'Lorem ipsum dolor sit amet',
+        'Lorem ipsum dolor sit amet',
+        'Lorem ipsum dolor sit amet',
+        'Lorem ipsum dolor sit amet',
+        'Lorem ipsum dolor sit amet',
+      ],
+    },
+    {
+      bg: '#FDBD50',
+      color: '#ffb142',
+      category: 'Chapter 5',
+      subCategories: [
+        'Lorem ipsum dolor sit amet0',
+        'Lorem ipsum dolor sit amet1',
+        'Lorem ipsum dolor sit amet2',
+        'Lorem ipsum dolor sit amet',
+        'Lorem ipsum dolor sit amet',
+        'Lorem ipsum dolor sit amet',
+        'Lorem ipsum dolor sit amet',
+      ],
+    },
+  ];
