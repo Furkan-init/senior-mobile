@@ -45,7 +45,7 @@ const DepartmentFirstLevel = ({ route, navigation }: any) => {
           style={styles.depFirstLevelBackIcon}
             onPress={() => navigation.dispatch(popAction)}
             >
-           <AntDesign name="arrowleft" size={ICON_SIZE} color="#1e3799" />
+           <AntDesign name="arrowleft" size={ICON_SIZE} color="#6e3b6e" />
             </Pressable>
          <SharedElement id={`item.${item.id}.photo`}
          style={styles.depFirstLevelContainerImage}
@@ -90,7 +90,7 @@ const styles = StyleSheet.create({
         width,
         top: height*0.045,
         borderRadius : 40,
-        backgroundColor : 'green',
+        backgroundColor : '#aeafb1',
         justifyContent : 'center',
         alignItems : 'center',
     },

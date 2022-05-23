@@ -77,7 +77,7 @@ const ChapterDistinguish = () => {
     const renderItem = ({ item }) => {
 
         const backgroundColor = item.chapterId === selectedId ? "#6e3b6e" : "#4b7bec";
-        const color = item.chapterId === selectedId ? 'white' : 'black';
+        const color = item.chapterId === selectedId ? '#6e3b6e' : 'black';
         const customHeight = item.chapterId === selectedId ? 'auto' : 'height * 0.1,';
 
         // When select a week, week tab will expand
@@ -226,11 +226,11 @@ const styles = StyleSheet.create({
         alignItems: 'center',
         height: height * 0.15,
         width: width * 0.3,
-        backgroundColor: 'green',
+        backgroundColor: '#aeafb1',
         margin: height * 0.015,
         borderWidth: 3,
         borderRadius: 10,
-        borderColor:'#18dcff',
+        borderColor:'black',
     },
     chapterDistinguishContainerSpecificChapterWeek : {
         display: 'flex',
@@ -238,9 +238,11 @@ const styles = StyleSheet.create({
         alignItems: 'center',
         height: height * 0.05,
         width: width * 0.5,
-        backgroundColor: 'green',
+        backgroundColor: '#aeafb1',
         margin: height * 0.015,
         borderRadius: 10,
+        borderWidth: 2,
+        borderColor: 'black',
     }
    
 

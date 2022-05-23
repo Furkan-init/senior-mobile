@@ -21,7 +21,7 @@ const PdfViewerScreen = ({route,navigation}) => {
           style={styles.depFirstLevelBackIcon}
             onPress={() => navigation.dispatch(popAction)}
             >
-           <AntDesign name="arrowleft" size={ICON_SIZE} color="#1e3799" />
+           <AntDesign name="arrowleft" size={ICON_SIZE} color="#6e3b6e" />
             </Pressable>
         </View>
         <WebView  style={styles.webWiewContainerPdfViewerScreen} 

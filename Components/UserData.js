@@ -43,7 +43,7 @@ export default userData = [
                 materialId: 'f859c047-632e-423e-842c-b67798ab54da',
                 materialType: 'PPTX',
                 materialLink: 'https://docs.google.com/presentation/d/1_Eoo6x2e6O8rzCbbA7g0kZdRv43uOMEd/edit?usp=sharing&ouid=100283613944820060961&rtpof=true&sd=true',
-                materialName: 'CMPE472 Application Layer',
+                materialName: 'Application Layer',
             },
         ]
     },

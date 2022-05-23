@@ -1,12 +1,14 @@
 import React from 'react'
-import { Dimensions, FlatList, Image, Pressable, StyleSheet, Text, View } from 'react-native'
+import { Button, Dimensions, FlatList, Image, Pressable, StyleSheet, Text, View } from 'react-native'
 
 
-import { useNavigation } from '@react-navigation/native';
+import { StackActions, useNavigation } from '@react-navigation/native';
 
 import { FontAwesome5 } from '@expo/vector-icons';
 import { AntDesign } from '@expo/vector-icons';
+import { Ionicons } from '@expo/vector-icons';
 const { height, width } = Dimensions.get('window');
+const popAction = StackActions.pop(1);
 
 const ICON_SIZE = height * 0.05;
 
@@ -40,7 +42,6 @@ const HomeScreen = ({ route, navigation }: any) => {
         return (
             item.materialType === 'VIDEO' ?
                 <Pressable
-
                     style={styles.chapterDistinguishContainerSpecificChapterAll}
                     onPress={() => navigation.navigate('VideoPlayer', { link: item.materialLink })}
                 >
@@ -63,6 +64,11 @@ const HomeScreen = ({ route, navigation }: any) => {
 
     return (
         <View style={styles.homeScreenMainContainer}>
+            <Pressable style={styles.homeScreenMainContainerLogOutButton}
+            onPress={() => navigation.dispatch(popAction)}
+            >
+                <Ionicons name="exit" size={35} color="gray" />
+                </Pressable>
             <Text
                 style={styles.homescreenLeaderBoardText}
             >LeaderBoard</Text>
@@ -330,7 +336,7 @@ const styles = StyleSheet.create({
         width: height * 0.05,
         borderWidth: 2,
         borderRadius: 15,
-        backgroundColor: 'yellow',
+        // backgroundColor: 'yellow',
     },
     homeScreenForthStudentSubstanceContainer: {
         height: height * 0.05,
@@ -350,13 +356,13 @@ const styles = StyleSheet.create({
         alignItems: 'center',
         height: height * 0.15,
         width: width * 0.3,
-        backgroundColor: 'green',
+        backgroundColor: '#aeafb1',
         margin: height * 0.015,
         borderWidth: 3,
         borderRadius: 10,
     },
     homeScreenRecommendedMaterialContainerTextView: {
-        backgroundColor: '#3c6382',
+        // backgroundColor: '#3c6382',
         borderRadius: 5,
         alignItems: 'center',
         width: width * 0.65,
@@ -366,7 +372,7 @@ const styles = StyleSheet.create({
         fontSize: 20,
         justifyContent: 'center',
         alignItems: 'center',
-        color: 'white',
+        color: '#18dcff',
         fontWeight: '600',
     },
     homeScreenFirstStudentContainerMedal : {
@@ -388,5 +394,10 @@ const styles = StyleSheet.create({
         position: 'absolute',
         bottom: height * 0.13,
         left: width * 0.16,
+    },
+    homeScreenMainContainerLogOutButton : {
+        position: 'absolute',
+        right: width * 0.01,
+        top: height * 0.003,
     }
 })

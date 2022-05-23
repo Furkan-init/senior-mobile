@@ -1,6 +1,6 @@
-import React, { useState } from 'react'
+import React, { useLayoutEffect, useState } from 'react'
 import { NativeStackScreenProps } from '@react-navigation/native-stack';
-import { Dimensions, Modal, Pressable, StyleSheet, Switch, Text, TextInput, View } from 'react-native'
+import { Button, Dimensions, KeyboardAvoidingView, Modal, Pressable, StyleSheet, Switch, Text, TextInput, View } from 'react-native'
 import { AntDesign } from '@expo/vector-icons';
 import { StackActions, useNavigation } from '@react-navigation/native';
 
@@ -21,15 +21,15 @@ const { height, width } = Dimensions.get('window');
 const popAction = StackActions.pop(1);
 
 
+
+
 const LoginScreen = ({ navigation }: Props) => {
-
-    
-
-
 
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
     const [openModal, setopenModal] = useState(false);
+   
+
 
     const handleLogin = () => {
         if (email == 'Average@gmail.com' && password == '123456') {
@@ -47,10 +47,11 @@ const LoginScreen = ({ navigation }: Props) => {
             <View style={styles.loginContainerLogo}>
                 <Text>Logo</Text>
             </View>
-            <View style={styles.loginContainerForm}>
+            <KeyboardAvoidingView style={styles.loginContainerForm}>
                 <TextInput
                     style={styles.loginContainerInput}
                     placeholder="Email"
+                    selectionColor = '#4b7bec'
                     onChangeText={(value) => {
                         setEmail(value)
                     }}
@@ -58,6 +59,7 @@ const LoginScreen = ({ navigation }: Props) => {
                 <TextInput
                     style={styles.loginContainerInput}
                     placeholder="Password"
+                    selectionColor = '#4b7bec'
                     secureTextEntry={true}
                     onChangeText={(value) => {
                         setPassword(value)
@@ -80,7 +82,7 @@ const LoginScreen = ({ navigation }: Props) => {
                 >
                     <Text>Login</Text>
                 </Pressable>
-            </View>
+            </KeyboardAvoidingView>
   
             <Modal
                 animationType="slide"
@@ -127,13 +129,15 @@ const styles = StyleSheet.create({
         alignItems: 'center',
     },
     loginContainerLogo: {
-        width: '60%',
-        height: '25%',
-        backgroundColor: '#eccc68',
+        width: width * 0.7,
+        height: height * 0.3,
+        backgroundColor: '#4b7bec',
+        justifyContent: 'center',
+        alignItems: 'center',
     },
     loginContainerForm: {
         width: '80%',
-        height: '30%',
+        height: height * 0.3,
         // backgroundColor: 'blue',
         alignItems: 'center',
         // justifyContent: 'space-between',
@@ -149,6 +153,7 @@ const styles = StyleSheet.create({
         width: '85%',
         height: '22%',
         backgroundColor: 'white',
+        color: '#18dcff',
         borderRadius: 10,
         margin: 10,
         padding: 15,
@@ -168,7 +173,7 @@ const styles = StyleSheet.create({
         position: 'absolute',
         height: height * 0.3,
         width: width * 0.7,
-        backgroundColor: '#01a3a4',
+        backgroundColor: '#4b7bec',
         opacity: 0.95,
         borderRadius: 8,
         left: (width * 0.3) * 0.5,

@@ -48,7 +48,7 @@ const EventScreen = () => {
             onPress={() => navigation.navigate('Form', {link: item.quizLink })}
             >
                 {/* <Ionicons name="ios-cloud-offline-sharp" size={24} color="black" /> */}
-                <Ionicons style={styles.eventListIcon} name="ios-cloud-sharp" size={40} color="#10ac84" />
+                <Ionicons style={styles.eventListIcon} name="ios-cloud-sharp" size={40} color="#4b7bec" />
                 <View style={styles.customFlatTag} >
                     <Text style={styles.title}>{item.title}</Text>
                     <Text style={styles.instructor}>quiz number :{item.questionNumber}</Text>
@@ -82,15 +82,16 @@ const styles = StyleSheet.create({
     },
     eventListViewContainer: {
         height: 100,
-        backgroundColor: 'green',
+        backgroundColor: '#4b6584',
         marginTop: 10,
         marginVertical: 8,
         marginHorizontal: 16,
         borderRadius: 10,
         alignItems: 'center',
+        justifyContent : 'center',
         flexDirection:'row',
         borderWidth:3,
-        borderColor: '#18dcff',
+        
     },
     eventListIcon : {
         marginLeft: '5%'
@@ -104,10 +105,11 @@ const styles = StyleSheet.create({
       },
       title: {
         fontSize: 25,
+        color : '#18dcff',
       },
       instructor: {
         fontSize: 20,
-        // marginTop: 5,
+        color : '#18dcff',
       },
 
 })

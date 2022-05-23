@@ -159,7 +159,7 @@ const styles = StyleSheet.create({
 
         height: COURSE_CONTAINER_HEIGHT,
         alignItems: 'center',
-        backgroundColor: 'green',
+        backgroundColor: '#aeafb1',
     },
     DepartmentDetailScreenChapterHeader: {
         height: 'auto',

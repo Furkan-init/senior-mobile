@@ -30,7 +30,7 @@ const FormScreen = ({route,navigation}) => {
           style={styles.depFirstLevelBackIcon}
             onPress={() => navigation.dispatch(popAction)}
             >
-           <AntDesign name="arrowleft" size={ICON_SIZE} color="black" />
+           <AntDesign name="arrowleft" size={ICON_SIZE} color="#6e3b6e" />
             </Pressable>
         </View>
         <WebView  style={styles.webWiewContainerPdfViewerScreen} 
