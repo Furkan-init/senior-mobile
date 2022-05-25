@@ -1,5 +1,5 @@
 import React from 'react';
-import { StyleSheet, Text, View } from 'react-native'
+import { Button, StyleSheet, Text, View } from 'react-native'
 import { createSharedElementStackNavigator } from 'react-navigation-shared-element';
 import DepartmentScreen from './Screens/DepartmentScreen';
 import DepartmentDetailScreen from './Screens/DepartmentDetailScreen';
@@ -19,16 +19,23 @@ import DepartmentFirstLevel from './Screens/DepartmentFirstLevel';
 import VideoPlayerScreen from './Screens/VideoPlayerScreen';
 import PdfViewerScreen from './Screens/PdfViewerScreen';
 import FormScreen from './Screens/FormScreen';
+import { getFocusedRouteNameFromRoute } from '@react-navigation/native';
 
 
 
-const NavigationStack = () => {
+const NavigationStack = (props : any) => {
     const Drawer = createDrawerNavigator();
     // const Stack = createNativeStackNavigator();
     const Stack = createSharedElementStackNavigator();
 
+    function getHeaderTitle(route : any) {
+        const routeName = getFocusedRouteNameFromRoute(route) ?? 'Login';
+        if (routeName == "Item")
+        return ({swipeEnabled: false})
+      }
 
-    // const hasLoggedIn: boolean = false;
+
+   
 
     function CourseTab() {
         return (
@@ -81,10 +88,12 @@ const NavigationStack = () => {
                 screenOptions={
                     {
                         headerShown: false,
-                        headerTransparent: true
+                        headerTransparent: true,
                     }}
             >
-                <Stack.Screen name="Login" component={LoginScreen} />
+                <Stack.Screen name="Login" component={LoginScreen} 
+                
+                />
                 <Stack.Screen name="LeaderBoard" component={HomeScreen} />
                 <Stack.Screen name="VideoPlayer" component={VideoPlayerScreen} />
                 <Stack.Screen name="PdfViewer" component={PdfViewerScreen} />
@@ -92,9 +101,20 @@ const NavigationStack = () => {
         );
     }
 
+    function showDrawerHeader(route : any) {
+        // If the focused route is not found, we need to assume it's the initial screen
+        // This can happen during if there hasn't been any navigation inside the screen
+        // In our case, it's "Feed" as that's the first screen inside the navigator
+        const routeName = getFocusedRouteNameFromRoute(route) ?? 'Login';
+      
+        if (routeName == 'Login') return false
+        else return true
+    }
+
     return (
 
         <>
+
             <Drawer.Navigator
                 drawerContent={props => <CustomDrawer {...props} />}
                 screenOptions={{
@@ -104,9 +124,11 @@ const NavigationStack = () => {
                 }}
             >
                 <Drawer.Screen name="Home" component={LeaderBoard}
-                    options={{
+                    options={({ route }) => ({
+                        headerShown: showDrawerHeader(route),
                         drawerIcon: () => <FontAwesome5 name="home" size={24} color="#b2bec3" />
-                    }}
+                      })
+                    }
                 />
                 <Drawer.Screen name="Courses" component={CourseTab}
                     options={{
